@@ -9,12 +9,12 @@ export interface FilterConfig {
 const Filter = ({ value, handleChange }: FilterConfig): JSX.Element => {
     return (
         <form>
-        <input className="form-control me-2"
-            value={value}
-            onChange={handleChange} 
-            type="search" 
-            arial-label="Search" 
-            placeholder="Search" />
+            <input className="form-control me-2"
+                value={value}
+                onChange={handleChange}
+                type="search"
+                arial-label="Search"
+                placeholder="Search" />
         </form>
 
     );
