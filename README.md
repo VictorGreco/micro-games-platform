@@ -1,13 +1,13 @@
 <!--
 *** Thanks for checking out this README Template. If you have a suggestion that would
-*** make this better, please fork the repo and create a pull request or simply open
+*** make this better, please fork the micro-games-platform and create a pull request or simply open
 *** an issue with the tag "enhancement".
 *** Thanks again! Now go create something AMAZING! :D
 ***
 ***
 ***
 *** To avoid retyping too much info. Do a search and replace for the following:
-*** victorgreco, repo_name, twitter_handle, email
+*** victorgreco, micro-games-platform, twitter_handle, email
 -->
 
 
@@ -34,23 +34,23 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/victorgreco/repo_name">
+  <a href="https://github.com/victorgreco/micro-games-platform">
     <img src="images/logo.svg" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">µGames</h3>
+  <h3 align="center">µGames platform</h3>
 
   <p align="center">
-    Is an intuitive and modern platform with a variety of games. The idea is to move the concept of a cyber cafe into a web app.
+    Intuitive and modern platform with a variety of games for all ages. The idea behind was to make a sort of games catalog for my nice how's 4 years old.
     <br />
-    <a href="https://github.com/victorgreco/repo_name"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/victorgreco/micro-games-platform"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/victorgreco/repo_name">View Demo</a>
+    <a href="https://github.com/victorgreco/micro-games-platform">View Demo</a>
     ·
-    <a href="https://github.com/victorgreco/repo_name/issues">Report Bug</a>
+    <a href="https://github.com/victorgreco/micro-games-platform/issues">report Bug</a>
     ·
-    <a href="https://github.com/victorgreco/repo_name/issues">Request Feature</a>
+    <a href="https://github.com/victorgreco/micro-games-platform/issues">Request Feature</a>
   </p>
 </p>
 
@@ -78,21 +78,42 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-Here's a blank template to get started:
-**To avoid retyping too much info. Do a search and replace with your text editor for the following:**
-`victorgreco`, `repo_name`, `twitter_handle`, `email`
+On the screenshot above we have the homepage of **µGames platform**. You can see the full catalog of games with some important information of each one such as **title**, **categories**, **brief description** and **start button** which routes us into the game.
 
+The app is also fully responsive for **Desktop**, **Mobile** and **Tablet**.
+
+<img src="./src/resources/docs/home/home.png">
+
+### Filter by Title
+
+<img src="./src/resources/docs/home/home_filter_title.png">
+
+### Filter by description
+
+<img src="./src/resources/docs/home/home_filter_description.png">
+
+
+## Games Catalog
+
+<img src="./src/resources/docs/hangman/hangman.gif" width="100">
+
+## Hangman
+
+<img src="./src/resources/docs/hangman/start.png">
+<img src="./src/resources/docs/hangman/play.png">
+<img src="./src/resources/docs/hangman/end.png">
 
 ### Built With
 
-* []()
-* []()
-* []()
+* [ReactJS]()
+* [Bootstrap]()
+* [Jest]()
+* [TypeScript]()
 
 
 
 <!-- GETTING STARTED -->
-## Getting Started with Create React App
+## Getting Started with µGames platform
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -100,7 +121,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
-#### `yarn start`
+#### `npm  run start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
@@ -108,12 +129,12 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
-#### `yarn test`
+#### `npm run test`
 
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-#### `yarn build`
+#### `npm run build`
 
 Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
@@ -123,16 +144,6 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-#### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
 ## Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
@@ -141,40 +152,31 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
 * npm
-```sh
-npm install npm@latest -g
-```
 
 ### Installation
 
-1. Clone the repo
+1. Clone the micro-games-platform
 ```sh
-git clone https://github.com/victorgreco/repo_name.git
+git clone https://github.com/victorgreco/micro-games-platform.git
 ```
 2. Install NPM packages
 ```sh
 npm install
 ```
-
-
-
-<!-- USAGE EXAMPLES -->
-## Usage
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-
+3. Build NPM packages
+```sh
+npm run build
+```
+4. Start localhost
+```sh
+npm run start
+```
 
 <!-- ROADMAP -->
 ## Roadmap
 
-See the [open issues](https://github.com/victorgreco/repo_name/issues) for a list of proposed features (and known issues).
-
-
+See the [open issues](https://github.com/victorgreco/micro-games-platform/issues) for a list of proposed features (and known issues).
 
 <!-- CONTRIBUTING -->
 ## Contributing
@@ -194,40 +196,26 @@ Contributions are what make the open source community such an amazing place to b
 
 Distributed under the MIT License. See `LICENSE` for more information.
 
-
-
 <!-- CONTACT -->
 ## Contact
 
 Victor Greco - [linkedin](https://www.linkedin.com/in/victor-greco/) - victorgreco263@gmail.com
 
-Project Link: [https://github.com/victorgreco/repo_name](https://github.com/victorgreco/repo_name)
-
-
-
-<!-- ACKNOWLEDGEMENTS -->
-## Acknowledgements
-
-* []()
-* []()
-* []()
-
-
-
+Project Link: [https://github.com/victorgreco/micro-games-platform](https://github.com/victorgreco/micro-games-platform)
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/victorgreco/repo.svg?style=flat-square
-[contributors-url]: https://github.com/victorgreco/repo/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/victorgreco/repo.svg?style=flat-square
-[forks-url]: https://github.com/victorgreco/repo/network/members
-[stars-shield]: https://img.shields.io/github/stars/victorgreco/repo.svg?style=flat-square
-[stars-url]: https://github.com/victorgreco/repo/stargazers
-[issues-shield]: https://img.shields.io/github/issues/victorgreco/repo.svg?style=flat-square
-[issues-url]: https://github.com/victorgreco/repo/issues
-[license-shield]: https://img.shields.io/github/license/victorgreco/repo.svg?style=flat-square
-[license-url]: https://github.com/victorgreco/repo/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/victorgreco/micro-games-platform.svg?style=flat-square
+[contributors-url]: https://github.com/victorgreco/micro-games-platform/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/victorgreco/micro-games-platform.svg?style=flat-square
+[forks-url]: https://github.com/victorgreco/micro-games-platform/network/members
+[stars-shield]: https://img.shields.io/github/stars/victorgreco/micro-games-platform.svg?style=flat-square
+[stars-url]: https://github.com/victorgreco/micro-games-platform/stargazers
+[issues-shield]: https://img.shields.io/github/issues/victorgreco/micro-games-platform.svg?style=flat-square
+[issues-url]: https://github.com/victorgreco/micro-games-platform/issues
+[license-shield]: https://img.shields.io/github/license/victorgreco/micro-games-platform.svg?style=flat-square
+[license-url]: https://github.com/victorgreco/micro-games-platform/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/victor-greco/
-[product-screenshot]: images/screenshot.png
+[product-screenshot]: src/resources/docs/home/home_desktop.png
