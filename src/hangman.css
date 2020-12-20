@@ -1,0 +1,151 @@
+#hangman .discover-letter {
+	height: 10px;
+	width: 10px;
+	font-size: 4em;
+	margin: 10px 10px 10px 10px;
+	border-bottom: 3px solid black;
+}
+#hangman .unknownLetter {
+	color: transparent;
+}
+
+#hangman .letters {
+	background-color: rgba(255, 255, 255 ,0.8);
+	margin: 5px;
+}
+
+#hangman .princess-ballon {
+	position: absolute;
+	left: 30vw;
+	top: 10vh;
+}
+
+#hangman .scary-monster {
+	position: absolute;
+	left: 3vw;
+	top: 600px;
+}
+
+#hangman .scary-monster {
+	position: absolute;
+	left: 3vw;
+	top:  550px;
+}
+
+/* vert mover */
+#hangman img.vert-move {
+	animation: vert-mover 10s infinite  alternate;
+}
+
+@keyframes vert-mover {
+	0% { transform: translateY(0px); }
+	100% { transform: translateY(100px); }
+}
+
+@media only screen and (min-width: 600px) {
+	#hangman .scary-monster {
+		top: 600px;
+	}
+	/* horizontal mover */
+	#hangman img.horiz-move {
+		animation: horizontal-mover 10s infinite  alternate;
+	}
+
+	@keyframes horizontal-mover {
+		0% { 
+				transform: translate(0px, -100px);
+		}
+		50% { 
+			transform: translate(0px, 0px);
+		}
+		75% {
+			transform: translate(400px, 0px);
+		}
+		100% { 
+			transform: translate(450px, -175px);
+		}
+	}
+}
+
+
+
+
+/* CLOUD ANIMATION*/
+
+/*Lets start with the cloud formation rather*/
+
+/*The container will also serve as the SKY*/
+
+
+#hangman #clouds{
+	padding: 100px 0;
+	background: #c9dbe9!important;
+	background: -webkit-linear-gradient(top, #c9dbe9 0%, #fff 100%);
+	background: -linear-gradient(top, #c9dbe9 0%, #fff 100%);
+	background: -moz-linear-gradient(top, #c9dbe9 0%, #fff 100%);
+}
+
+/*Time to finalise the cloud shape*/
+#hangman .cloud {
+	width: 200px;
+	height: 60px;
+	background: #fff;
+	border-radius: 200px;
+	-moz-border-radius: 200px;
+	-webkit-border-radius: 200px;
+	
+	position: relative; 
+}
+
+#hangman .cloud:before, #hangman .cloud:after {
+	content: '';
+	position: absolute; 
+	background: #fff;
+	width: 100px; height: 80px;
+	position: absolute; top: -15px; left: 10px;
+	
+	border-radius: 100px;
+	-moz-border-radius: 100px;
+	-webkit-border-radius: 100px;
+	
+	-webkit-transform: rotate(30deg);
+	transform: rotate(30deg);
+	-moz-transform: rotate(30deg);
+}
+
+#hangman .cloud:after {
+	width: 120px;
+	height: 120px;
+	top: -55px;
+	left: auto;
+	right: 15px;
+}
+
+/*variable speed, opacity, and position of clouds for realistic effect*/
+#hangman .x2 {
+	left: 10vw;
+	
+	-webkit-transform: scale(0.6);
+	-moz-transform: scale(0.6);
+	transform: scale(0.6);
+	opacity: 0.6; /*opacity proportional to the size*/
+}
+
+#hangman .x3 {
+	left: 50vw;
+	
+	-webkit-transform: scale(0.8);
+	-moz-transform: scale(0.8);
+	transform: scale(0.8);
+	opacity: 0.8; /*opacity proportional to the size*/
+}
+
+#hangman .x4 {
+	left: 45vw;
+	top: -20vh;
+	
+	-webkit-transform: scale(0.75);
+	-moz-transform: scale(0.75);
+	transform: scale(0.75);
+	opacity: 0.75; /*opacity proportional to the size*/
+}
