@@ -1,21 +1,28 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-function InGameRanking({ plays }: any) {
+export interface Plays {
+    player: string;
+    score: number | string;
+}
+
+interface InGameRankingProps {
+    plays: Plays[]
+}
+
+export default function InGameRanking({...props}: InGameRankingProps) {
+    const topScores = props.plays.slice(0, 4);
 
     return (
-        <div className="col-md-2 bg-light">
-            <h1>User Scores</h1>
+        <div>
+            <h1>Top 5 Scores</h1>
             <ul>
-                {plays.map((play: any, index: number) =>
-                    <li key={index}>
+                {topScores.map((play: any, index: number) =>
+                    <li className="no-styled-list" key={index}>
                         <h3>{play.player}</h3>
                         <p>{play.score}</p>
                     </li>)}
             </ul>
-
         </div>
     );
 }
-
-export default InGameRanking;

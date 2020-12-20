@@ -8,7 +8,7 @@ interface rules {
 function InGameRanking({ rules }: rules) {
 
     return (
-        <div className="col-md-3 bg-light">
+        <div>
             <h1>Rules</h1>
             <p>{rules}</p>
         </div>
