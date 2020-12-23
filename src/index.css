@@ -56,3 +56,4 @@ button.buzz:hover {
 }
 
 @import './hangman.css';
+@import './memory.css';

@@ -41,7 +41,7 @@ function Home() {
     return (
         <div>
             <TopNavbar value={word} handleChange={handleChange}></TopNavbar>
-            <GamesCatalog gamesCatalog={word.length < 1 ? gamesCatalog : filterDisplay} ></GamesCatalog>
+            <GamesCatalog gamesCatalog={word.length < 1 ? gamesCatalog : filterDisplay}></GamesCatalog>
         </div>
     );
 }

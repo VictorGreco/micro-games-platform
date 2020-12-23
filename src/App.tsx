@@ -4,6 +4,7 @@ import './App.css';
 
 import Home from './components/Home';
 import Hangman from './components/Hangman';
+import Memory from './components/Memory';
 
 class App extends React.Component {
   render() {
@@ -12,6 +13,7 @@ class App extends React.Component {
         <Switch>
           <Route exact path="/" component={Home}/>
           <Route exact path="/hangman" component={Hangman}/>
+          <Route exact path="/memory" component={Memory}/>
         </Switch>
       </div>
     )

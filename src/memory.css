@@ -1,0 +1,11 @@
+#memory .currentlyPLaying {
+    background-image: url('./resources/memory/background.jpg');
+    background-size: cover;
+}
+#memory .memoryCard {
+    height: 200px;
+    width: 150px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    margin: 15px;
+}
