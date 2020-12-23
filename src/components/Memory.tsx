@@ -39,6 +39,7 @@ interface MemoryState {
     clickOne: CardImage;
     clickTwo: CardImage;
     pairs: number;
+    attempts: number;
 }
 
 const back: string = Mickey;
@@ -118,13 +119,14 @@ export default class Memory extends React.Component<MemoryProps, MemoryState> {
             hideUserName: false,
             hideGameboard: true,
             hideGameEnd: true,
-            endGameMessage: 'You discover all the body parts !',
+            endGameMessage: 'You discover all the body parts',
             startDate: 0,
             clickOne: undefined,
             clickTwo: undefined,
             gameResult: 'win',
             cards: this.shuffleCards(),
-            pairs: 0
+            pairs: 0,
+            attempts: 0
         };
     }
 
@@ -138,18 +140,19 @@ export default class Memory extends React.Component<MemoryProps, MemoryState> {
                 clickOne?.classList?.add('discovered');
                 clickTwo?.classList?.add('discovered');
 
-                this.setState({ pairs: this.state.pairs + 1 })
+                this.setState({ pairs: this.state.pairs + 1 }, this.isGameEnd)
             }
 
             this.setState({
                 clickOne: undefined,
-                clickTwo: undefined
+                clickTwo: undefined,
+                attempts: this.state.attempts + 1
             })
 
             setTimeout(() => {
                 document?.querySelectorAll('img:not(.discovered)')?.forEach((img: any) =>
                     img.src = img.getAttribute('data-back'));
-            }, 500)
+            }, 250);
         }
     }
 
@@ -210,14 +213,15 @@ export default class Memory extends React.Component<MemoryProps, MemoryState> {
     }
 
     isGameEnd() {
-        const noUnknownCardsLeft = document.querySelectorAll('unknownCard').length === 0;
+        const noUnknownCardsLeft = this.state.pairs === 8;
 
         if (noUnknownCardsLeft) {
             const playsHandle = this.state.plays;
+            const attempts  = this.state.attempts;
             const time = parseMsToTimeString(new Date().getTime() - this.state.startDate);
 
             playsHandle[0] = Object.assign(playsHandle[0], {
-                score: `${this.state.endGameMessage} in ${time}`
+                score: `${this.state.endGameMessage} in ${attempts} attempts with ${time}`
             })
 
             this.setState({
