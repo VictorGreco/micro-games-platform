@@ -29,8 +29,6 @@
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
-
-
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
@@ -54,13 +52,11 @@
   </p>
 </p>
 
-
-
 <!-- TABLE OF CONTENTS -->
 ## Table of Contents
 
 * [About the Project](#about-the-project)
-  * [Built With](#built-with)
+* [Built With](#built-with)
 * [Getting Started](#getting-started)
   * [Prerequisites](#prerequisites)
   * [Installation](#installation)
@@ -69,9 +65,6 @@
 * [Contributing](#contributing)
 * [License](#license)
 * [Contact](#contact)
-* [Acknowledgements](#acknowledgements)
-
-
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
@@ -92,10 +85,11 @@ The app is also fully responsive for **Desktop**, **Mobile** and **Tablet**.
 
 <img src="./src/resources/docs/home/home_filter_description.png">
 
-
 ## Games Catalog
 
 <img src="./src/resources/docs/hangman/hangman.gif" width="100">
+<img src="./src/resources/docs/memory/memory.gif" width="100">
+
 
 ## Hangman
 
@@ -103,14 +97,18 @@ The app is also fully responsive for **Desktop**, **Mobile** and **Tablet**.
 <img src="./src/resources/docs/hangman/play.png">
 <img src="./src/resources/docs/hangman/end.png">
 
+## Memory 
+
+<img src="./src/resources/docs/memory/start.png">
+<img src="./src/resources/docs/memory/play.png">
+<img src="./src/resources/docs/memory/end.png">
+
 ### Built With
 
 * [ReactJS]()
 * [Bootstrap]()
 * [Jest]()
 * [TypeScript]()
-
-
 
 <!-- GETTING STARTED -->
 ## Getting Started with µGames platform
@@ -188,8 +186,6 @@ Contributions are what make the open source community such an amazing place to b
 3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
-
-
 
 <!-- LICENSE -->
 ## License
