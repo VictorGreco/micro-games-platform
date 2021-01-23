@@ -166,12 +166,14 @@ class Hangman extends React.Component<HangmanProps, HangmanState> {
 					<div className="cloud x4"></div>
 					<img src={PRINCESS_BALLONS[this.state.attempts + 1]} 
 						height="auto" 
-						width="250" 
+						width="250"
+						alt="princess"
 						className={`princess-ballon ${this.state.hideGameboard ? 'vert-move' : ''}`}></img>
 					{(this.state.gameResult === '' || this.state.gameResult === 'lose') 
 						&& (<img src={scaryMonster} 
 							height="auto" 
 							width="300"
+							alt="monster"
 							className={`scary-monster ${this.state.hideGameboard ? 'horiz-move' : ''}`}></img>)}
 					<StartGameForm hideUserName={this.state.hideUserName}
 						handleChange={(e: any) => this.handleChange(e)} 
@@ -183,7 +185,7 @@ class Hangman extends React.Component<HangmanProps, HangmanState> {
 						<div>
 							{this.state.word.split('').map((letter, index) =>
 							(<span key={index}
-								className={`discover-letter ${index % 2 == 0 ? 'unknownLetter' : ''}`}
+								className={`discover-letter ${index % 2 === 0 ? 'unknownLetter' : ''}`}
 								data-letter={letter}>{letter}</span>))}
 						</div>
 						<div className="d-flex justify-content-center flex-wrap row">
