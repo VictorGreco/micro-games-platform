@@ -22,6 +22,7 @@
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
+[![Netlify Status](https://api.netlify.com/api/v1/badges/9af15de0-f3f9-4945-8a28-bf41b0330bd1/deploy-status)](https://app.netlify.com/sites/eloquent-gates-1aa469/deploys)
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]

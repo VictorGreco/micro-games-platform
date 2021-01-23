@@ -248,6 +248,7 @@ export default class Memory extends React.Component<MemoryProps, MemoryState> {
                                             data-name={card.name}
                                             width="100"
                                             height="100"
+                                            alt="memorys"
                                             onClick={(e: any) => this.handleClick(e)}></img>
                                     </div>
                                 )
